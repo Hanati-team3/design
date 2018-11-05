@@ -5,6 +5,13 @@
 <head>
 	<title>SJ 렌트카</title>
 	<jsp:include page="common/commoncss.jsp"/> 
+	<jsp:include page="common/commonjs.jsp"/> 
+	<style>
+	.tg-btn{
+		margin-left: 30px;
+	}
+	
+	</style>
 </head>
 <body class="tg-home tg-homevone">
 
@@ -27,12 +34,12 @@
 									<div class="tg-slidercontent">
 										<h1>SJ 렌터카</h1>
 										<h2>방문을 환영합니다.</h2>
-										<div class="row justify-content-center" style="">
-										<a class="tg-btn" href="#"><span>실시간 예약</span></a>
-										<a class="tg-btn" href="#"><span>커뮤니티</span></a>
-										<a class="tg-btn" href="#"><span>위시리스트</span></a>
-										<a class="tg-btn" href="#"><span>예약확인</span></a>
-										<a class="tg-btn" href="#"><span>로그인</span></a>
+										<div class="row justify-content-around" >
+											<a class="tg-btn" href="#"><span>실시간 예약</span></a>
+											<a class="tg-btn" href="#"><span>커뮤니티</span></a>
+											<a class="tg-btn" href="#"><span>위시리스트</span></a>
+											<a class="tg-btn" href="#"><span>예약확인</span></a>
+											<a class="tg-btn" href="#"><span>로그인</span></a>
 										</div>
 									</div>
 								</div>
@@ -48,10 +55,9 @@
 			<!--************************************
 				Main Start
 			*************************************-->
-			
 	</div>
 	
 	
-	<jsp:include page="common/commonjs.jsp"/> 
+	
 </body>
 </html>

@@ -661,7 +661,7 @@ li.tg-rss a { background:#ff6600; }
 			Theme Styling						
 ============================================= */
 .tg-wrapper {
-	height:100%;
+	height:98%;
 	overflow-y: hidden;
 	position:relative;
 }
@@ -2345,7 +2345,7 @@ li.tg-rss a { background:#ff6600; }
 	padding: 9px 30px
 }
 .tg-headervtwo.tg-headerfixed.scroll-to-fixed-fixed .tg-navigation > ul > li {padding: 23px 0;}
-.tg-homeslidervtwo .item figcaption { padding: 312px 0; }
+.tg-homeslidervtwo .item figcaption { padding: 308px 0;}
 .tg-homeslidervtwo .tg-slidercontent,
 .tg-homeslidervtwo .tg-slidercontent h1,
 .tg-homeslidervtwo .tg-slidercontent h2 { text-align: left; }

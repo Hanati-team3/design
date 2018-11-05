@@ -4,12 +4,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SJ 렌트카</title>
 <jsp:include page="../common/commoncss.jsp" />
 <!-- datePicker -->
 <link rel="stylesheet" href="<%=application.getContextPath()%>/css/datepicker.min.css" type="text/css">
+<jsp:include page="../common/commonjs.jsp" />
+<script src="<%=application.getContextPath()%>/js/datepicker.min.js"></script>
+<script src="<%=application.getContextPath()%>/js/datepicker.en.js"></script>
+<script type="text/javascript">
+	$('.datepicker-here').data('datepicker')
+</script>
+<script type="text/javascript">
+
+/* function detailCar(){
+	var w = window.open('url','', 'width=','height=');
+	//ajax process
+	$.ajax({
+		url:"search_detail.jsp",
+		method:"POST",
+		data:"json",
+		success: function(response){
+			if(w) w.location.href = "search_detail.jsp";
+		}
+	});
+}
+ */
+/* function detailCar(){
+	 alert('asd');
+	console.log('asdasd');
+	var w = $(this).attr('href');
+	layer_popup($w);
+} 
+ */
+$(document).ready(function(){
+ $(".car_detail").click(function() {
+		var $w = $(this).attr('href');
+		layer_popup($w);
+	});
+});
+
+
+function layer_popup(e){
+	var $e = $(e);
+	
+	$(".detail_show").fadeIn();
+	  var $elWidth = ~~($e.outerWidth()),
+      $elHeight = ~~($e.outerHeight()),
+      docWidth = $(document).width(),
+      docHeight = $(document).height();
+
+	  // 화면의 중앙에 레이어를 띄운다.
+	  if ($elHeight < docHeight || $elWidth < docWidth) {
+	      $e.css({
+	          marginTop: -$elHeight /2,
+	          marginLeft: -$elWidth/2
+	      })
+	  } else {
+	      $e.css({top: 0, left: 0});
+	  }
+	
+	  $e.find('a.btn-layerClose').click(function(){
+	      isDim ? $('.dim-layer').fadeOut() : $el.fadeOut(); // 닫기 버튼을 클릭하면 레이어가 닫힌다.
+	      return false;
+	  });
+	
+	  $('.layer .dimBg').click(function(){
+	      $('.dim-layer').fadeOut();
+	      return false;
+	  });
+}
+
+
+
+</script>
 </head>
-<body class="tg-home tg-homevtwo">
+<body>
 
 	<!--************************************
 			Mobile Menu Start
@@ -131,14 +199,18 @@
 		</div>
 		<!--************************************
 					Inner Banner End
-			*************************************-->
-			<!--************************************
+		*************************************-->
+		<!--************************************
 				Main Start
 		*************************************-->
-		<main id="tg-main" class="tg-main tg-sectionspace tg-haslayout">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+		<main id="tg-main" class="tg-main tg-sectionspace tg-haslayout tg-bglight">
+		<div class="container" style="width: 90%">
+			<div class="row">
+				<div class="detail_show" style="display: none">
+					<jsp:include page="search_detail.jsp"/>
+				</div>
+				<div id="tg-twocolumns" class="tg-twocolumns">
+					<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 pull-left">
 						<div id="tg-content" class="tg-content">
 							<div class="tg-listing tg-listingvone">
 								<div class="tg-sectiontitle">
@@ -146,22 +218,28 @@
 								</div>
 								<div class="clearfix"></div>
 								<div class="row">
+									<!-- Car List -->
 									<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-										<div class="tg-populartour">
+										<div class="tg-populartour"	>
 											<figure>
-												<a href="tourbookingdetail.html"><img src="../images/tours/img-19.jpg" alt="image destinations"></a>
+												<a><img
+													src="../images/G70.jpg" alt="image destinations"></a>
 											</figure>
 											<div class="tg-populartourcontent">
 												<div class="tg-populartourtitle">
-													<h3><a href="tourbookingdetail.html">City Tours in Europe, Paris</a></h3>
+													<h3>
+														<a class="car_detail">City Tours in Europe,
+															Paris</a>
+													</h3>
 												</div>
 												<div class="tg-description">
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh...</p>
+													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+														elit, sed diam nonummy nibh...</p>
 												</div>
 												<div class="tg-populartourfoot">
 													<div class="tg-durationrating">
-														<span class="tg-tourduration">2 Days</span>
-														<span class="tg-stars" ><span style="width: 60%"></span></span>
+														<span class="tg-tourduration">2 Days</span> <span
+															class="tg-stars"><span style="width: 60%"></span></span>
 														<em>(3 Review)</em>
 													</div>
 													<div class="tg-pricearea">
@@ -171,6 +249,11 @@
 											</div>
 										</div>
 									</div>
+									
+									
+									
+									
+									
 									<div class="clearfix"></div>
 									<nav class="tg-pagination">
 										<ul>
@@ -178,34 +261,70 @@
 											<li><a href="javascript:void(0);">2</a></li>
 											<li><a href="javascript:void(0);">3</a></li>
 											<li><a href="javascript:void(0);">4</a></li>
-											<li class="tg-nextpage"><a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
+											<li class="tg-nextpage"><a href="javascript:void(0);"><i
+													class="fa fa-angle-right"></i></a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-						
-						
-						
-						
-						</div>
 					</div>
+					<!--************************************
+							Ranking Start
+					*************************************-->
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<aside id="tg-sidebar" class="tg-sidebar">
+							<div class="tg-widget tg-widgetlatesttour">
+								<div class="tg-widgettitle">
+									<h3>Latest Tour</h3>
+								</div>
+								<div class="clearfix"></div><br><br>
+								<div class="tg-widgetcontent">
+									<ul>
+										<!-- for문으로 가져올 것!! -->
+										<li>
+											<figure>
+												<a href="javascript:void(0);"><img
+													src="../images/K5.jpg" alt="image destinations" style="width: 150px;  height: auto;"></a>
+											</figure>
+											<div class="tg-newcontent">
+												<h4>
+													<a href="javascript:void(0);">K5</a>
+												</h4>
+												<div class="tg-reviewstararea">
+													<span class="tg-stars"><span></span></span> <em>(5
+														Review)</em>
+												</div>
+												<div class="tg-pricearea">
+													<span>from</span>
+													<h4>$600</h4>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</aside>
+					</div>
+					<!--************************************
+							Ranking End
+					*************************************-->
 				</div>
 			</div>
+		</div>
 		</main>
 		<!--************************************
 				Main End
 		*************************************-->
-	
-	
-	
-	
+
+
+
+
 	</div>
 	
 	<!--************************************
 					Login method
-			*************************************--> 
+	*************************************--> 
 	<div id="tg-loginsingup" class="tg-loginsingup col-6 " data-vide-bg="poster: ../images/singup-img.jpg" data-vide-options="position: 0% 50%">
       <div class="tg-contentarea tg-themescrollbar">
          <div class="tg-scrollbar">
@@ -244,11 +363,6 @@
          </div>
       </div>
    </div>
-	<jsp:include page="../common/commonjs.jsp" />
-	<script src="<%=application.getContextPath()%>/js/datepicker.min.js"></script>
-	<script src="<%=application.getContextPath()%>/js/datepicker.en.js"></script>
-	<script type="text/javascript">
-		$('.datepicker-here').data('datepicker')
-	</script>
+	
 </body>
 </html>
