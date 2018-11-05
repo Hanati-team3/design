@@ -163,7 +163,7 @@
 										</fieldset>
 										
 										<fieldset>
-											<button style="float: right" class="tg-btn" type="submit"><span>결제하기</span></button>
+											<button type="submit" style="float: right" class="tg-btn" type="submit"><span>결제하기</span></button>
 										</fieldset>
 									</form>
 								</div>

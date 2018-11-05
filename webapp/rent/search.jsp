@@ -73,8 +73,6 @@ function layer_popup(e){
 	  });
 }
 
-
-
 </script>
 </head>
 <body>
@@ -162,7 +160,7 @@ function layer_popup(e){
 													    data-language="en"
 													    placeholder="기간을 선택해 주세요"
 													    readonly 
-													    class="datepicker-here form-control"/>
+													    class="datepicker-here form-control" required/>
 												</div>
 												<div class = "col-md-4">
 													<!-- 총 시간 입력 -->
