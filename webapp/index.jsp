@@ -10,7 +10,10 @@
 	.tg-btn{
 		margin-left: 30px;
 	}
-	
+/* 	.tg-homeslidervtwo .item figcaption{
+		padding: 312px;
+		width : 100%;
+	} */
 	</style>
 </head>
 <body class="tg-home tg-homevone">
@@ -35,11 +38,11 @@
 										<h1>SJ 렌터카</h1>
 										<h2>방문을 환영합니다.</h2>
 										<div class="row justify-content-around" >
-											<a class="tg-btn" href="#"><span>실시간 예약</span></a>
-											<a class="tg-btn" href="#"><span>커뮤니티</span></a>
-											<a class="tg-btn" href="#"><span>위시리스트</span></a>
-											<a class="tg-btn" href="#"><span>예약확인</span></a>
-											<a class="tg-btn" href="#"><span>로그인</span></a>
+											<a class="tg-btn" href="<%=application.getContextPath()%>/rent/search.jsp"><span>실시간 예약</span></a>
+											<a class="tg-btn" href="<%=application.getContextPath()%>/community/community.jsp"><span>커뮤니티</span></a>
+											<a class="tg-btn" href="<%=application.getContextPath()%>/community/community.jsp"><span>위시리스트</span></a>
+											<a class="tg-btn" href="<%=application.getContextPath()%>/wish/wish_list.jsp"><span>예약확인</span></a>
+											<a class="tg-btn" href="<%=application.getContextPath()%>/user/login.jsp"><span>로그인</span></a>
 										</div>
 									</div>
 								</div>
@@ -56,8 +59,5 @@
 				Main Start
 			*************************************-->
 	</div>
-	
-	
-	
 </body>
 </html>

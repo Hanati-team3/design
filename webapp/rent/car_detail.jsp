@@ -1,4 +1,6 @@
-<div class="tg-sectionspace tg-haslayout">
+<%@ page contentType="text/html; charset=utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<div class="tg-sectionspace tg-haslayout" style="padding: 70px 0">
 				<div class="tg-themetabs tg-bookingtabs">
 					<ul class="tg-themetabnav" role="tablist">
 						<li role="presentation" class="active"><a href="#america"
@@ -247,7 +249,7 @@
 												<div class="tg-review">
 													<div class="tg-author">
 														<figure class="tg-authorimg">
-															<img src="images/avatars/img-01.jpg"
+															<img src="../images/avatars/img-01.jpg"
 																alt="image description">
 														</figure>
 														<div class="tg-authorinfo">
@@ -274,7 +276,7 @@
 												<div class="tg-review">
 													<div class="tg-author">
 														<figure class="tg-authorimg">
-															<img src="images/avatars/img-01.jpg"
+															<img src="../images/avatars/img-01.jpg"
 																alt="image description">
 														</figure>
 														<div class="tg-authorinfo">
@@ -308,7 +310,7 @@
 												<div class="tg-review">
 													<div class="tg-author">
 														<figure class="tg-authorimg">
-															<img src="images/avatars/img-01.jpg"
+															<img src="../images/avatars/img-01.jpg"
 																alt="image description">
 														</figure>
 														<div class="tg-authorinfo">
@@ -333,7 +335,7 @@
 												<div class="tg-review">
 													<div class="tg-author">
 														<figure class="tg-authorimg">
-															<img src="images/avatars/img-01.jpg"
+															<img src="../images/avatars/img-01.jpg"
 																alt="image description">
 														</figure>
 														<div class="tg-authorinfo">
@@ -357,7 +359,7 @@
 												<div class="tg-review">
 													<div class="tg-author">
 														<figure class="tg-authorimg">
-															<img src="images/avatars/img-01.jpg"
+															<img src="../images/avatars/img-01.jpg"
 																alt="image description">
 														</figure>
 														<div class="tg-authorinfo">
@@ -418,73 +420,73 @@
 								<ul>
 									<li>
 										<figure>
-											<a href="images/gallery/img-01.jpg"
+											<a href="../images/gallery/img-01.jpg"
 												data-rel="prettyPhoto[instagram]"> <img
-												src="images/gallery/img-01.jpg" alt="image decruoton">
+												src="../images/gallery/img-01.jpg" alt="image decruoton">
 											</a>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<a href="images/gallery/img-02.jpg"
+											<a href="../images/gallery/img-02.jpg"
 												data-rel="prettyPhoto[instagram]"> <img
-												src="images/gallery/img-02.jpg" alt="image decruoton">
+												src="../images/gallery/img-02.jpg" alt="image decruoton">
 											</a>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<a href="images/gallery/img-03.jpg"
+											<a href="../images/gallery/img-03.jpg"
 												data-rel="prettyPhoto[instagram]"> <img
-												src="images/gallery/img-03.jpg" alt="image decruoton">
+												src="../images/gallery/img-03.jpg" alt="image decruoton">
 											</a>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<a href="images/gallery/img-04.jpg"
+											<a href="../images/gallery/img-04.jpg"
 												data-rel="prettyPhoto[instagram]"> <img
-												src="images/gallery/img-04.jpg" alt="image decruoton">
+												src="../images/gallery/img-04.jpg" alt="image decruoton">
 											</a>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<a href="images/gallery/img-05.jpg"
+											<a href="../images/gallery/img-05.jpg"
 												data-rel="prettyPhoto[instagram]"> <img
-												src="images/gallery/img-05.jpg" alt="image decruoton">
+												src="../images/gallery/img-05.jpg" alt="image decruoton">
 											</a>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<a href="images/gallery/img-06.jpg"
+											<a href="../images/gallery/img-06.jpg"
 												data-rel="prettyPhoto[instagram]"> <img
-												src="images/gallery/img-06.jpg" alt="image decruoton">
+												src="../images/gallery/img-06.jpg" alt="image decruoton">
 											</a>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<a href="images/gallery/img-07.jpg"
+											<a href="../images/gallery/img-07.jpg"
 												data-rel="prettyPhoto[instagram]"> <img
-												src="images/gallery/img-07.jpg" alt="image decruoton">
+												src="../images/gallery/img-07.jpg" alt="image decruoton">
 											</a>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<a href="images/gallery/img-08.jpg"
+											<a href="../images/gallery/img-08.jpg"
 												data-rel="prettyPhoto[instagram]"> <img
-												src="images/gallery/img-08.jpg" alt="image decruoton">
+												src="../images/gallery/img-08.jpg" alt="image decruoton">
 											</a>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<a href="images/gallery/img-09.jpg"
+											<a href="../images/gallery/img-09.jpg"
 												data-rel="prettyPhoto[instagram]"> <img
-												src="images/gallery/img-09.jpg" alt="image decruoton">
+												src="../images/gallery/img-09.jpg" alt="image decruoton">
 											</a>
 										</figure>
 									</li>
